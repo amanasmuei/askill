@@ -1,0 +1,45 @@
+{
+  "name": "@aman_asmuei/askill",
+  "version": "0.1.0",
+  "description": "The portable skill layer for AI companions — teach your AI new capabilities",
+  "type": "module",
+  "bin": {
+    "askill": "./bin/askill.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "registry"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "skills",
+    "llm",
+    "companion",
+    "acore",
+    "prompt",
+    "registry"
+  ],
+  "author": "Aman Asmuei",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "commander": "^13.1.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  }
+}
