@@ -29,6 +29,10 @@
     "prompt",
     "registry"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amanasmuei/askill.git"
+  },
   "author": "Aman Asmuei",
   "license": "MIT",
   "dependencies": {
